@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>การใช้งาน css แบบ External</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>การใช้งานซีเล็คเตอร์(selecter) แบบ id selecter </title>
+    <style>
+        /*
+        p{
+        tag selecter
+        }
+        */
+        /*ตรงนี้คือการประกาศแบบ id selecter*/
+        #p250{
+            text-decoration: underline;
+            background-color: bisque;
+        }
+        #p1{
+            color: red;
+            background-color: lightgray;
+        }
+        #p2{
+            color: blue;
+            font-style: italic;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        #p3{
+            color: aquamarine;
+            font-weight: bold;
+            font-style: italic;
+            background-color: coral;
+
+        }
+    </style>
 </head>
 <body>
-    <p>ข้อความนี้อยู่ใน p</p>
-    <div>ข้อความนี้อยู่ใน div</div>
-    <span>ข้อความนี้อยู่ใน span</span>
-    <div>ข้อความนี้อยู่ใน div</div>
-    <p>ข้อความนี้อยู่ใน p</p>
+    <p id="p250">ข้อความของแท็กที่ไม่กำหนด id</p>
 
-ข้อความนี้อยู่ใน span ที่ซ้อนใน div
+    <p id="p1">ข้อความของแท็กที่กำหนดค่า id="p1"</p>
+
+    <p id="p2">ข้อความของแท็กที่กำหนดค่า id="p2"</p>
+
+    <p id="p3">ข้อความของแท็กที่กำหนดค่า id="p3"</p>
 </body>
 </html>
